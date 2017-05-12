@@ -5,36 +5,39 @@
     <title></title>
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <script id="project-template" type="text/x-handlebars-template">
+      <h1><a href="{{{titleUrl}}}">{{title}}</a></h1>
+      <p>{{date}}</p>
+      {{{body}}}
+  </script>
   </head>
   <body>
     <header>
     <nav class="main-nav">
      <div class="icon-menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
      <ul>
-       <li class="tab" data-content="articles"><a href="#" class="icon-home"> Home</a></li>
-       <li class="tab" data-content="about"><a href="#" class="icon-address-book"> About</a></li>
-       <li><a href="http://twitter.com/brookr" target="_blank" class="icon-twitter3"> Twitter</a></li>
-       <li><a href="http://github.com/brookr" target="_blank" class="icon-github"> GitHub</a></li>
+       <li class="tab-home" data-content="articles"><a href="#" class="icon-home"> Home</a></li>
+       <li class="tab-about" data-content="about"><a href="#" class="icon-address-book"> About</a></li>
+       <li class="tab-twitter"><a href="http://twitter.com/brookr" target="_blank" class="icon-twitter3"> Twitter</a></li>
+       <li class="tab-project"><a href="http://github.com/brookr" target="_blank" class="icon-github"> Projects</a></li>
      </ul>
    </nav>
     </header>
     <main>
+      <img class="panda" src="https://s-media-cache-ak0.pinimg.com/736x/58/71/33/5871338f3012df8dd28d4d0963ed53a6.jpg">
       <a href="https://github.com/AlexisYan"><i class="fa fa-github" aria-hidden="true"></i></a>
-      <section id="projects">
-        <project class="template" data-category="">
-          <h1><a href="">Title</a></h1>
-          <!-- <time pubdate datetime="2000-01-01">Publish Time</time> -->
-          <section class="description"></section>
+      <section id="projects"></section>
         </project>
       </section>
     </main>
     <footer>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
     <script src="jsfile/app.js"></script>
     <script src="jsfile/main.js"></script>
-
+    <script src="jsfile/style.js"></script>
   </body>
 </html>
