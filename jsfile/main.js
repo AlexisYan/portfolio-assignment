@@ -1,24 +1,23 @@
+
 'use strict';
-var project = [];
+var projectArray = [];
 
 function Repo (rawDataObj){
   this.title = rawDataObj.title;
   this.titleUrl = rawDataObj.titleUrl;
-  // this.date = rawDataObj.date;
+  this.date = rawDataObj.date;
   this.body = rawDataObj.body;
 }
 
 Repo.prototype.toHtml = function(){
-  var $newRepo = $('article.template').clone();
-  $newRepo.find('h1').html(this.title);
-  $newRepo.find('a').attr('href', this.titleUrl);
-  $newRepo.find('.description').html(this.body);
-  return $newRepo;
+  var $newRepo = $('#project-template').html();
+  var $newRepoRender = Handlebars.compile($newRepo);
+  return $newRepoRender(this);
 };
 rawData.forEach(function(articleObject) {
-  project.push(new Repo(articleObject));
+  projectArray.push(new Repo(articleObject));
 });
-
-project.forEach(function(article){
-  $('#projects').append(article.toHtml());
+projectArray.forEach(function(project){
+  $('#projects').append(project.toHtml());
+  console.log(project);
 });
