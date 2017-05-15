@@ -3,12 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/module.css">
+    <link rel="stylesheet" href="/css/state.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/base.css">
     <script id="project-template" type="text/x-handlebars-template">
+      <div class="project-container">
       <h1><a href="{{{titleUrl}}}">{{title}}</a></h1>
       <p>{{date}}</p>
       {{{body}}}
+    </div>
   </script>
   </head>
   <body>
@@ -18,15 +25,15 @@
      <ul>
        <li class="tab-home" data-content="articles"><a href="#" class="icon-home"> Home</a></li>
        <li class="tab-about" data-content="about"><a href="#" class="icon-address-book"> About</a></li>
-       <li class="tab-twitter"><a href="http://twitter.com/brookr" target="_blank" class="icon-twitter3"> Twitter</a></li>
-       <li class="tab-project"><a href="http://github.com/brookr" target="_blank" class="icon-github"> Projects</a></li>
+       <li class="tab-twitter"><a href="#"  class="icon-twitter3"> Twitter</a></li>
+       <li class="tab-project"><a href="#"  class="icon-github"> Projects</a></li>
      </ul>
    </nav>
     </header>
     <main>
       <img class="panda" src="https://s-media-cache-ak0.pinimg.com/736x/58/71/33/5871338f3012df8dd28d4d0963ed53a6.jpg">
       <a href="https://github.com/AlexisYan"><i class="fa fa-github" aria-hidden="true"></i></a>
-      <section id="projects"></section>
+      <section id="projects" class=""></section>
         </project>
       </section>
     </main>
