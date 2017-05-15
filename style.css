@@ -1,6 +1,12 @@
 *{
   width: 100%;
 }
+html, body{
+  background: url('image/background.jpg');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .icon-menu {
   font-size: 1em;
   float: right;
