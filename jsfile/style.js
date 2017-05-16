@@ -3,6 +3,9 @@
 $(document).ready(function(){
   $('.tab-home').click(function(e){
     e.preventDefault();
-    $('img').slideToggle("slow");
+    $('img').toggleClass("slow");
+  })
+  $('#project').on(click, function(){
+    $('')
   })
 });
