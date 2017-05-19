@@ -1,0 +1,23 @@
+{
+  "name": "protfolio-assignment-",
+  "version": "1.0.0",
+  "description": "porfolio project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexisYan/protfolio-assignment-.git"
+  },
+  "author": "Alexis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexisYan/protfolio-assignment-/issues"
+  },
+  "homepage": "https://github.com/AlexisYan/protfolio-assignment-#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
