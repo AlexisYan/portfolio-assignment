@@ -1,0 +1,33 @@
+.icon-menu {
+  font-size: 1em;
+  float: right;
+}
+.main-nav {
+  padding: 0.1em;
+}
+
+.main-nav ul {
+  display: none;
+  padding: 0;
+  list-style: none;
+  clear: both;
+}
+
+.main-nav:hover ul {
+  display: block;
+}
+
+.main-nav li {
+  margin-right: .4em;
+  font-size: 2em;
+  padding: .5em .2em;
+  font-family: 'Monoton', cursive;
+}
+.panda{
+  width: 70%;
+  margin-left: 14%;
+  display: none;
+}
+.projects{
+  display: none;
+}

@@ -1,0 +1,47 @@
+@media only screen and (min-width: 650px){
+  .icon-menu {
+    display: none;
+  }
+
+  .main-nav {
+    padding: .2em .2em .2em 2em;
+  }
+
+  .main-nav ul {
+    display: block;
+  }
+  .main-nav::after {
+    border-bottom: none;
+    color: white;
+  }
+  .main-nav ul li {
+    display: block;
+    border-bottom: none;
+    width: auto;
+    position: fixed;
+    font-family: 'Monoton', cursive;
+    text-align: center;
+  }
+  li:first-child{
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  li:nth-child(2){
+    transform: rotate(-90deg);
+    top: 50%;
+    left:0;
+  }
+  li:nth-child(3){
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+  li:last-child{
+    transform: rotate(90deg);
+    top: 50%;
+    right: 0;
+  }
+}
+
+}
