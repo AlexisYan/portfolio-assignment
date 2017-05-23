@@ -1,4 +1,8 @@
 @media only screen and (min-width: 650px){
+  .gif{
+    width: 100%;
+    height:100%
+  }
   .icon-menu {
     display: none;
   }

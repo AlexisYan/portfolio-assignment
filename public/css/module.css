@@ -31,3 +31,19 @@
 .projects{
   display: none;
 }
+
+
+/*@keyframes github-spin {
+  0% {transform:rotate(0deg);}
+  90% {transform:rotate(0deg);}
+  92% {transform:rotate(10deg);}
+  94% {transform:rotate(-10deg);}
+  96% {transform:rotate(10deg);}
+  98% {transform:rotate(-10deg);}
+  100% {transform:rotate(0deg);}
+}
+
+.fa-github:hover{
+  animation: github-spin 5s ease-in-out infinite;
+  transition: background-color 0.1s ease, box-shadow 0.1s ease;
+}*/
